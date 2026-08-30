@@ -80,6 +80,7 @@ components/
                         RichText, Carousel
 lib/
   constants.ts          SATU sumber kebenaran kontak & sosial
+  og.tsx                kartu Open Graph 1200×630, digambar dari token
   navigation.ts         struktur navbar
   content.ts            loader konten bertipe
   assets.ts             resolver path gambar
@@ -142,4 +143,4 @@ Google memperlakukannya sama dengan 301.
 - **Slug artikel blog.** `/api/blog` tidak memberi id atau slug, jadi slug
   diturunkan dari judul (`slugify`). URL artikel karena itu **baru** — belum ada
   URL lama yang perlu dipertahankan.
-- Gambar Open Graph 1200×630 dan GTM.
+- GTM / analytics.
