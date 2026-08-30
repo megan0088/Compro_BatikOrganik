@@ -115,6 +115,24 @@ lib/
 | Swiper (~40 KB) | Scroll-snap native | Nol dependensi baru |
 | Meta description bawaan CRA | Metadata + Open Graph per halaman | — |
 
+## Paritas URL dengan situs lama
+
+Rute situs lama diambil dari definisi router di bundle-nya, **bukan** dari
+tautan navbar — empat sub-halaman partnership tidak pernah muncul di menu.
+
+| URL lama | Di sini |
+|---|---|
+| `/`, `/about`, `/about-batik`, `/contact`, `/faq`, `/gallery`, `/review`, `/partnership`, `/map-batik`, `/blog`, `/collection`, `/collection/:id`, `/campaign/:id` | dipertahankan apa adanya |
+| `/blog/0` … `/blog/17` | **redirect** ke slug dari judul (`next.config.ts`) |
+| `/gallery-review` | **redirect** ke `/gallery` — halaman ini kosong di situs lama |
+| `/partnership/corpo`, `/hampers`, `/custom`, `/build` | **belum dibangun** — lihat di bawah |
+| `/admin`, `/api/*` | hilang bersama backend lama |
+
+Situs lama memberi artikel URL berdasarkan POSISI dalam array `/api/blog`,
+bukan id. Peta redirect dihasilkan dari urutan array yang sama, jadi setiap
+URL lama mendarat di artikel yang benar. `permanent: true` mengirim 308 —
+Google memperlakukannya sama dengan 301.
+
 ## Yang belum ada
 
 - **Peta interaktif `/map-batik`.** 21 motif dan daerahnya sudah diekstrak dari
@@ -123,4 +141,9 @@ lib/
 - **Slug artikel blog.** `/api/blog` tidak memberi id atau slug, jadi slug
   diturunkan dari judul (`slugify`). URL artikel karena itu **baru** — belum ada
   URL lama yang perlu dipertahankan.
-- `sitemap.ts`, `robots.ts`, redirect 301, dan GTM — baru relevan saat cutover.
+- **Empat sub-halaman partnership** (`/partnership/corpo`, `/hampers`,
+  `/custom`, `/build`). Isinya nyata dan datang dari dua endpoint yang belum
+  di-snapshot — `/api/uniforms` (7 blok, halaman seragam kantor) dan
+  `/api/corporate` (24 item hampers) — plus 29 gambar yang belum diunduh.
+  Perlu keputusan: dibangun, atau di-redirect ke `/partnership`.
+- Gambar Open Graph 1200×630 dan GTM.
