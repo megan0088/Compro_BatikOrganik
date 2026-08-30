@@ -1,0 +1,130 @@
+{
+ "data": [
+  {
+   "id": 1,
+   "motif": "Motif Etnik Serambi Aceh",
+   "region": "Aceh",
+   "image_url": "/static/media/Motif Etnik Serambi Aceh.2bbc4c232076e91e30f5.jpg"
+  },
+  {
+   "id": 2,
+   "motif": "Motif Talawang",
+   "region": "Kalimantan Tengah",
+   "image_url": "/static/media/Motif Talawang.12c40b27c61c1ede65df.jpg"
+  },
+  {
+   "id": 3,
+   "motif": "Motif Etnik Kolintang",
+   "region": "Sulawesi Utara",
+   "image_url": "/static/media/Motif Etnik Kolintang.adeae579e0577b703de1.jpg"
+  },
+  {
+   "id": 4,
+   "motif": "Motif Etnik Tana Toraja",
+   "region": "Sulawesi Selatan",
+   "image_url": "/static/media/Motif Etnik Tana Toraja.1300b6eae338708e00b7.jpg"
+  },
+  {
+   "id": 5,
+   "motif": "Motif Etnik Wakatobi",
+   "region": "Sulawesi Tenggara, Kabupaten Wakatobi",
+   "image_url": "/static/media/Motif Etnik Wakatobi.f3762c4c0219fb5eb1ae.jpg"
+  },
+  {
+   "id": 6,
+   "motif": "Motif Etnik Raja Ampat",
+   "region": "Papua Barat, Kabupaten Raja Ampat",
+   "image_url": "/static/media/Motif Etnik Raja Ampat.0ab907f8ae577bc657fc.jpg"
+  },
+  {
+   "id": 7,
+   "motif": "Motif Etnik Asmat",
+   "region": "Papua",
+   "image_url": "/static/media/Motif Etnik Asmat.79d81dd9c79aafd6c87d.jpg"
+  },
+  {
+   "id": 8,
+   "motif": "Motif Siger Lampung",
+   "region": "Lampung",
+   "image_url": "/static/media/Motif Siger Lampung.88b6e2db4847347baf07.jpg"
+  },
+  {
+   "id": 9,
+   "motif": "Motif Etnik Andam",
+   "region": "Banten",
+   "image_url": "/static/media/Motif Etnik Andam.96aabdf9d088dae53de5.jpg"
+  },
+  {
+   "id": 9,
+   "motif": "Motif Etnik Pusaka",
+   "region": "Banten",
+   "image_url": "/static/media/Motif Etnik Pusaka.8c42977078543eb80bec.jpg"
+  },
+  {
+   "id": 10,
+   "motif": "Motif Kawung Kenari",
+   "region": "Jawa Barat, Kota Bogor",
+   "image_url": "/static/media/Motif Kawung Kenari.9b1a7fbfd2ea2af65f45.jpg"
+  },
+  {
+   "id": 11,
+   "motif": "Motif Etnik Kentjana Padjadjaran",
+   "region": "Jawa Barat, Kecamatan Bogor Selatan, Kota Bogor",
+   "image_url": "/static/media/Motif Etnik Kentjana Padjadjaran.3b1c49a5ff8164ae1b2b.jpg"
+  },
+  {
+   "id": 11,
+   "motif": "Motif Prasasti",
+   "region": "Jawa Barat, Kecamatan Bogor Selatan, Kota Bogor",
+   "image_url": "/static/media/Motif Prasasti.218f4862b62b82156d58.jpg"
+  },
+  {
+   "id": 12,
+   "motif": "Motif Aksara Sunda",
+   "region": "Jawa Barat Kecamatan Kawali, Kabupaten Ciamis",
+   "image_url": "/static/media/Motif Aksara Sunda.d114195bd27d0b9afdbc.jpg"
+  },
+  {
+   "id": 13,
+   "motif": "Motif Melasti",
+   "region": "Bali, Badung, Kecamatan Kuta Selatan",
+   "image_url": "/static/media/Motif Melasti.295faaa64ab5afa7ccaf.jpg"
+  },
+  {
+   "id": 14,
+   "motif": "Motif Etnik Pesona Bali",
+   "region": "Bali",
+   "image_url": "/static/media/Motif Etnik Pesona Bali.67f02d0697ad7f2e274d.jpg"
+  },
+  {
+   "id": 15,
+   "motif": "Motif Etnik Masalembo",
+   "region": "Perairan Tengah Laut Jawa",
+   "image_url": "/static/media/Motif Etnik Masalembo.e8ed419ffc4b64e54a88.jpg"
+  },
+  {
+   "id": 16,
+   "motif": "TAKA MAKASSAR",
+   "region": "Nusa Tenggara Timur, Kabupaten Manggarai Barat, Labuan Bajo",
+   "image_url": "/static/media/TAKA MAKASSAR.e9131e6e0084832341be.jpg"
+  },
+  {
+   "id": 17,
+   "motif": "Motif Etnik Labuan Bajo",
+   "region": "Nusa Tenggara Timur, Kabupaten Manggarai Barat",
+   "image_url": "/static/media/Motif Etnik Labuan Bajo.93f0c15269b15f233628.jpg"
+  },
+  {
+   "id": 18,
+   "motif": "Motif Etnik Sumba",
+   "region": "Nusa Tenggara Timur, Pulau Sumba",
+   "image_url": "/static/media/Motif Etnik Sumba.8bc7009594088545685b.jpg"
+  },
+  {
+   "id": 18,
+   "motif": "Motif Etnik Kanatar",
+   "region": "Nusa Tenggara Timur, Pulau Sumba",
+   "image_url": "/static/media/Motif Etnik Kanatar.76ef7af5e69129a55876.jpg"
+  }
+ ]
+}

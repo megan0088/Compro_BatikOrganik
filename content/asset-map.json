@@ -1,0 +1,1041 @@
+{
+ "/_root/favicon.ico": {
+  "src": "/assets/_root/favicon.ico"
+ },
+ "/_root/logo192.png": {
+  "src": "/assets/_root/logo192.png",
+  "width": 192,
+  "height": 192
+ },
+ "/_root/logo512.png": {
+  "src": "/assets/_root/logo512.png",
+  "width": 512,
+  "height": 512
+ },
+ "/_root/manifest.json": {
+  "src": "/assets/_root/manifest.json"
+ },
+ "/_root/robots.txt": {
+  "src": "/assets/_root/robots.txt"
+ },
+ "/images/about1/Batik Cap.jpg": {
+  "src": "/assets/images/about1/batik-cap.jpg",
+  "width": 1600,
+  "height": 1763
+ },
+ "/images/about2/Batik Kombinasi.jpg": {
+  "src": "/assets/images/about2/batik-kombinasi.jpg",
+  "width": 1600,
+  "height": 1763
+ },
+ "/images/about3/Batik Care_2.jpg": {
+  "src": "/assets/images/about3/batik-care-2.jpg",
+  "width": 1600,
+  "height": 1293
+ },
+ "/images/about5/Pencucian.jpg": {
+  "src": "/assets/images/about5/pencucian-1.jpg",
+  "width": 1600,
+  "height": 1526
+ },
+ "/images/about6/penjemuran.jpg": {
+  "src": "/assets/images/about6/penjemuran.jpg",
+  "width": 1600,
+  "height": 1526
+ },
+ "/images/about7/penyimpanan.jpg": {
+  "src": "/assets/images/about7/penyimpanan.jpg",
+  "width": 1600,
+  "height": 1526
+ },
+ "/images/banner/Main Banner.jpg": {
+  "src": "/assets/images/banner/main-banner.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/blog/01j9gce3fw223d4e0zk8ggktqd.jpg": {
+  "src": "/assets/images/blog/01j9gce3fw223d4e0zk8ggktqd.jpg",
+  "width": 640,
+  "height": 480
+ },
+ "/images/blog/675bb176edfe6.jpeg": {
+  "src": "/assets/images/blog/675bb176edfe6.jpeg",
+  "width": 1200,
+  "height": 800
+ },
+ "/images/blog/675d16e5bb1ec.jpeg": {
+  "src": "/assets/images/blog/675d16e5bb1ec.jpeg",
+  "width": 750,
+  "height": 500
+ },
+ "/images/blog/675d180fde518.jpeg": {
+  "src": "/assets/images/blog/675d180fde518.jpeg",
+  "width": 750,
+  "height": 500
+ },
+ "/images/blog/Batikorganik-Wakili-Jawa-Barat-dalam-Program-Nasional-Bangun-Wirausaha-Perempuan-Berdaya-KUB-TUMBUH-Resmi-Diluncurkan-di-Desa-Cipaku_1.jpg": {
+  "src": "/assets/images/blog/batikorganik-wakili-jawa-barat-dalam-program-nasional-bangun-wirausaha-perempuan-berdaya-kub-tumbuh-resmi-diluncurkan-di-desa-cipaku-1.jpg",
+  "width": 598,
+  "height": 336
+ },
+ "/images/blog/WhatsApp-Image-2024-10-03-at-193142-2443814510.jpeg": {
+  "src": "/assets/images/blog/whatsapp-image-2024-10-03-at-193142-2443814510-1.jpeg",
+  "width": 1599,
+  "height": 899
+ },
+ "/images/blog/WhatsApp-Image-2024-10-06-at-19.29.45.jpeg": {
+  "src": "/assets/images/blog/whatsapp-image-2024-10-06-at-19-29-45.jpeg",
+  "width": 854,
+  "height": 541
+ },
+ "/images/blog/tpox63dsdej4rch.jpeg": {
+  "src": "/assets/images/blog/tpox63dsdej4rch.jpeg",
+  "width": 1600,
+  "height": 1200
+ },
+ "/images/blog1/WhatsApp Image 2024-12-17 at 14.26.46_da498682.jpg": {
+  "src": "/assets/images/blog1/whatsapp-image-2024-12-17-at-14-26-46-da498682.jpg",
+  "width": 828,
+  "height": 1153
+ },
+ "/images/blog10/blog9.webp": {
+  "src": "/assets/images/blog10/blog9.webp",
+  "width": 2240,
+  "height": 1260
+ },
+ "/images/blog2/WhatsApp Image 2024-12-17 at 14.25.54_171d4432.jpg": {
+  "src": "/assets/images/blog2/whatsapp-image-2024-12-17-at-14-25-54-171d4432.jpg",
+  "width": 828,
+  "height": 976
+ },
+ "/images/blog3/WhatsApp Image 2024-12-17 at 14.26.46_cbec7c34.jpg": {
+  "src": "/assets/images/blog3/whatsapp-image-2024-12-17-at-14-26-46-cbec7c34.jpg",
+  "width": 828,
+  "height": 1206
+ },
+ "/images/blog4/blog4.webp": {
+  "src": "/assets/images/blog4/blog4.webp",
+  "width": 2240,
+  "height": 1260
+ },
+ "/images/blog5/blog5.webp": {
+  "src": "/assets/images/blog5/blog5.webp",
+  "width": 2240,
+  "height": 1260
+ },
+ "/images/blog6/blog3.webp": {
+  "src": "/assets/images/blog6/blog3.webp",
+  "width": 2240,
+  "height": 1260
+ },
+ "/images/blog7/blog6.webp": {
+  "src": "/assets/images/blog7/blog6.webp",
+  "width": 2240,
+  "height": 1260
+ },
+ "/images/blog8/blog7.webp": {
+  "src": "/assets/images/blog8/blog7.webp",
+  "width": 2240,
+  "height": 1260
+ },
+ "/images/blog9/blog8.webp": {
+  "src": "/assets/images/blog9/blog8.webp",
+  "width": 1480,
+  "height": 832
+ },
+ "/images/campaign/Batik Photo_some collection (1).jpg": {
+  "src": "/assets/images/campaign/batik-photo-some-collection-1.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/campaign/Batik Photo_some collection (2).jpg": {
+  "src": "/assets/images/campaign/batik-photo-some-collection-2.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/campaign/Batik Photo_some collection (3).jpg": {
+  "src": "/assets/images/campaign/batik-photo-some-collection-3.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/campaign/Batik Photo_some collection (4).jpg": {
+  "src": "/assets/images/campaign/batik-photo-some-collection-4.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/campaign/Batik Photo_some collection (7).jpg": {
+  "src": "/assets/images/campaign/batik-photo-some-collection-7.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/category1/COVER.jpg": {
+  "src": "/assets/images/category1/cover-1.jpg",
+  "width": 1600,
+  "height": 743
+ },
+ "/images/category1/LANDING PAGE_BATIK2.jpg": {
+  "src": "/assets/images/category1/landing-page-batik2.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/category2/LANDING PAGE_WOMEN.jpg": {
+  "src": "/assets/images/category2/landing-page-women.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/category2/LANDING PAGE_WOMEN_CROP.jpg": {
+  "src": "/assets/images/category2/landing-page-women-crop.jpg",
+  "width": 1600,
+  "height": 696
+ },
+ "/images/category3/LANDING PAGE_MEN2.jpg": {
+  "src": "/assets/images/category3/landing-page-men2.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/category3/LANDING PAGE_MEN2_CROP2.jpg": {
+  "src": "/assets/images/category3/landing-page-men2-crop2.jpg",
+  "width": 1600,
+  "height": 696
+ },
+ "/images/category4/LANDING PAGE_ORGANIC FABRIC.jpg": {
+  "src": "/assets/images/category4/landing-page-organic-fabric.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/category4/LANDING PAGE_ORGANIC FABRIC_CROP.jpg": {
+  "src": "/assets/images/category4/landing-page-organic-fabric-crop.jpg",
+  "width": 1600,
+  "height": 696
+ },
+ "/images/category5/LANDING PAGE_CRAFT.jpg": {
+  "src": "/assets/images/category5/landing-page-craft.jpg",
+  "width": 1600,
+  "height": 1200
+ },
+ "/images/category5/LANDING PAGE_CRAFT_CROP.jpg": {
+  "src": "/assets/images/category5/landing-page-craft-crop.jpg",
+  "width": 1600,
+  "height": 696
+ },
+ "/images/category6/LANDING PAGE_GIFTS.jpg": {
+  "src": "/assets/images/category6/landing-page-gifts.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/category6/LANDING PAGE_GIFTS2.jpg": {
+  "src": "/assets/images/category6/landing-page-gifts2.jpg",
+  "width": 1600,
+  "height": 696
+ },
+ "/images/collection1/1. Keragaman Warna_BATIK collection.jpg": {
+  "src": "/assets/images/collection1/1-keragaman-warna-batik-collection.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection11/Men Collection_kemeja panjang.jpg": {
+  "src": "/assets/images/collection11/men-collection-kemeja-panjang.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection12/Men Collection_kemeja casual.jpg": {
+  "src": "/assets/images/collection12/men-collection-kemeja-casual.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection13/Men Collection bomber.jpg": {
+  "src": "/assets/images/collection13/men-collection-bomber.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection17/Organic Fiber_Tencel.jpg": {
+  "src": "/assets/images/collection17/organic-fiber-tencel.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection18/Organic Fiber_Acacia.jpg": {
+  "src": "/assets/images/collection18/organic-fiber-acacia.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection2/2. Variasi Jenis Kain_BATIK collection.jpg": {
+  "src": "/assets/images/collection2/2-variasi-jenis-kain-batik-collection.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection21/Craft Ring Obi Belt.jpg": {
+  "src": "/assets/images/collection21/craft-ring-obi-belt.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection22/Craft Bucket Hat.jpg": {
+  "src": "/assets/images/collection22/craft-bucket-hat.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection23/Craft Bag.jpg": {
+  "src": "/assets/images/collection23/craft-bag.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection26/Gift Personal Gift.jpg": {
+  "src": "/assets/images/collection26/gift-personal-gift.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection27/Gift  Seasonal Gift.jpg": {
+  "src": "/assets/images/collection27/gift-seasonal-gift.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection3/3. Eksplorasi Variasi Motif Batik Terkini_BATIK collection.jpg": {
+  "src": "/assets/images/collection3/3-eksplorasi-variasi-motif-batik-terkini-batik-collection.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection39/4_Women Collection_tunic floral.jpg": {
+  "src": "/assets/images/collection39/4-women-collection-tunic-floral.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection4/4. Koleksi Organik_BATIK collection.jpg": {
+  "src": "/assets/images/collection4/4-koleksi-organik-batik-collection.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection40/5_Women Collection_kebaya lace.jpg": {
+  "src": "/assets/images/collection40/5-women-collection-kebaya-lace.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection41/5_Women Collection_gamis.jpg": {
+  "src": "/assets/images/collection41/5-women-collection-gamis.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection42/7_Women Collection_outer viscose.jpg": {
+  "src": "/assets/images/collection42/7-women-collection-outer-viscose.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection43/8_Women Collection_celana.jpg": {
+  "src": "/assets/images/collection43/8-women-collection-celana.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection44/9_Women Collection_wrap skirt batik.jpg": {
+  "src": "/assets/images/collection44/9-women-collection-wrap-skirt-batik.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection45/10_Women Collection_one set.jpg": {
+  "src": "/assets/images/collection45/10-women-collection-one-set.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection46/11_Women Collection_aksesoris.jpg": {
+  "src": "/assets/images/collection46/11-women-collection-aksesoris.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection47/12_Women Collection_shoes.jpg": {
+  "src": "/assets/images/collection47/12-women-collection-shoes.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection48/Craft Ring skirt.jpg": {
+  "src": "/assets/images/collection48/craft-ring-skirt.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection49/Craft Dompet Passpor.jpg": {
+  "src": "/assets/images/collection49/craft-dompet-passpor.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection50/Craft Kipas.jpg": {
+  "src": "/assets/images/collection50/craft-kipas.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection51/13_Women Collection_hijab.jpg": {
+  "src": "/assets/images/collection51/13-women-collection-hijab.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection52/Craft Ring tumblr.jpg": {
+  "src": "/assets/images/collection52/craft-ring-tumblr.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection53/Craft Ring knit pillow.jpg": {
+  "src": "/assets/images/collection53/craft-ring-knit-pillow.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection54/Craft Bookmark.jpg": {
+  "src": "/assets/images/collection54/craft-bookmark.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection6/1_Women Collection_tunic organic.jpg": {
+  "src": "/assets/images/collection6/1-women-collection-tunic-organic.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection7/2_Women Collection_tunic organic.jpg": {
+  "src": "/assets/images/collection7/2-women-collection-tunic-organic.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/collection8/3_Women Collection_simple kutu baru.jpg": {
+  "src": "/assets/images/collection8/3-women-collection-simple-kutu-baru.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/gallery/Visit Store_Potrait1.jpg": {
+  "src": "/assets/images/gallery/visit-store-potrait1.jpg",
+  "width": 1600,
+  "height": 2000
+ },
+ "/images/gallery/Visit Store_Potrait11.jpg": {
+  "src": "/assets/images/gallery/visit-store-potrait11.jpg",
+  "width": 1600,
+  "height": 2000
+ },
+ "/images/gallery/Visit Store_Potrait2.jpg": {
+  "src": "/assets/images/gallery/visit-store-potrait2.jpg",
+  "width": 1600,
+  "height": 2000
+ },
+ "/images/gallery/Visit Store_Potrait3.jpg": {
+  "src": "/assets/images/gallery/visit-store-potrait3.jpg",
+  "width": 1600,
+  "height": 2000
+ },
+ "/images/gallery/Visit Store_Potrait6.jpg": {
+  "src": "/assets/images/gallery/visit-store-potrait6.jpg",
+  "width": 1600,
+  "height": 2000
+ },
+ "/images/gallery/Visit Store_Potrait9.jpg": {
+  "src": "/assets/images/gallery/visit-store-potrait9.jpg",
+  "width": 1600,
+  "height": 2000
+ },
+ "/images/gallery/Visit store concept Photo_0_Shopping1.jpg": {
+  "src": "/assets/images/gallery/visit-store-concept-photo-0-shopping1.jpg",
+  "width": 1600,
+  "height": 1000
+ },
+ "/images/gallery/Visit store concept Photo_0_Shopping4.jpg": {
+  "src": "/assets/images/gallery/visit-store-concept-photo-0-shopping4.jpg",
+  "width": 1600,
+  "height": 1000
+ },
+ "/images/gallery/Visit store concept Photo_1_Payment.jpg": {
+  "src": "/assets/images/gallery/visit-store-concept-photo-1-payment.jpg",
+  "width": 1600,
+  "height": 1000
+ },
+ "/images/gallery/Visit store concept Photo_1_Payment2.jpg": {
+  "src": "/assets/images/gallery/visit-store-concept-photo-1-payment2.jpg",
+  "width": 1600,
+  "height": 1000
+ },
+ "/images/gallery/Visit store concept Photo_2_Done Payment.jpg": {
+  "src": "/assets/images/gallery/visit-store-concept-photo-2-done-payment.jpg",
+  "width": 1600,
+  "height": 1000
+ },
+ "/images/home/carousel/20/Organic Fabric text.jpg": {
+  "src": "/assets/images/home/carousel/20/organic-fabric-text.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/carousel/21/Organic Fabric (3).jpg": {
+  "src": "/assets/images/home/carousel/21/organic-fabric-3.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/carousel/22/Organic Fabric (4).jpg": {
+  "src": "/assets/images/home/carousel/22/organic-fabric-4.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/carousel/BTS OF BATIK.jpg": {
+  "src": "/assets/images/home/carousel/bts-of-batik.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/carousel/BTS OF BATIK_2.jpg": {
+  "src": "/assets/images/home/carousel/bts-of-batik-2.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/carousel/BTS OF BATIK_3.jpg": {
+  "src": "/assets/images/home/carousel/bts-of-batik-3.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/carousel/BTS OF BATIK_4.jpg": {
+  "src": "/assets/images/home/carousel/bts-of-batik-4.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/carousel/BTS OF BATIK_5.jpg": {
+  "src": "/assets/images/home/carousel/bts-of-batik-5.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/carousel/Banner Hampers SHopee_2.jpg": {
+  "src": "/assets/images/home/carousel/banner-hampers-shopee-2.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/carousel/Banner Hampers SHopee_3.jpg": {
+  "src": "/assets/images/home/carousel/banner-hampers-shopee-3.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/carousel/Banner Hampers SHopee_5.jpg": {
+  "src": "/assets/images/home/carousel/banner-hampers-shopee-5.jpg",
+  "width": 1080,
+  "height": 608
+ },
+ "/images/home/carousel/Banner Hampers SHopee_a.jpg": {
+  "src": "/assets/images/home/carousel/banner-hampers-shopee-a.jpg",
+  "width": 1080,
+  "height": 608
+ },
+ "/images/home/carousel/Banner Hampers SHopee_b.jpg": {
+  "src": "/assets/images/home/carousel/banner-hampers-shopee-b.jpg",
+  "width": 1080,
+  "height": 608
+ },
+ "/images/home/carousel/Batik Photo_some collection (1).jpg": {
+  "src": "/assets/images/home/carousel/batik-photo-some-collection-1.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/carousel/Batik Photo_some collection (2).jpg": {
+  "src": "/assets/images/home/carousel/batik-photo-some-collection-2.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/carousel/Batik Photo_some collection (3).jpg": {
+  "src": "/assets/images/home/carousel/batik-photo-some-collection-3.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/carousel/Batik Photo_some collection (4).jpg": {
+  "src": "/assets/images/home/carousel/batik-photo-some-collection-4.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/carousel/Batik Photo_some collection (5).jpg": {
+  "src": "/assets/images/home/carousel/batik-photo-some-collection-5.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/carousel/Batik Photo_some collection (6).jpg": {
+  "src": "/assets/images/home/carousel/batik-photo-some-collection-6.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/carousel/Batik Photo_some collection (7).jpg": {
+  "src": "/assets/images/home/carousel/batik-photo-some-collection-7.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/carousel/FIRST SLIDE_COVER_Banner Hampers SHopee.jpg": {
+  "src": "/assets/images/home/carousel/first-slide-cover-banner-hampers-shopee.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home/sponsor/Logo-APR-01.png": {
+  "src": "/assets/images/home/sponsor/logo-apr-01-1.png",
+  "width": 1600,
+  "height": 786
+ },
+ "/images/home/sponsor/tencel-logo.png": {
+  "src": "/assets/images/home/sponsor/tencel-logo.png",
+  "width": 551,
+  "height": 244
+ },
+ "/images/home1/Main Banner.jpg": {
+  "src": "/assets/images/home1/main-banner.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home12/Custom Motif.jpg": {
+  "src": "/assets/images/home12/custom-motif.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/home5/Snapinsta.app_357628259_3629082410653071_6880395954865945329_n_1080.jpg": {
+  "src": "/assets/images/home5/snapinsta-app-357628259-3629082410653071-6880395954865945329-n-1080.jpg",
+  "width": 1080,
+  "height": 1350
+ },
+ "/images/home6/Sogan Feed_resize.jpg": {
+  "src": "/assets/images/home6/sogan-feed-resize.jpg",
+  "width": 1080,
+  "height": 1350
+ },
+ "/images/home9/Lindungi Hutan2_2.jpg": {
+  "src": "/assets/images/home9/lindungi-hutan2-2.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/journey3/penanaman.jpeg": {
+  "src": "/assets/images/journey3/penanaman.jpeg",
+  "width": 1280,
+  "height": 960
+ },
+ "/images/journey5/blog3.webp": {
+  "src": "/assets/images/journey5/blog3.webp",
+  "width": 2240,
+  "height": 1260
+ },
+ "/images/logo/LogoBatikOrganik_Black.png": {
+  "src": "/assets/images/logo/logobatikorganik-black.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/partnership/images/41df75da60d528780cc24321bf340b61.png": {
+  "src": "/assets/images/partnership/images/41df75da60d528780cc24321bf340b61.png",
+  "width": 1200,
+  "height": 630
+ },
+ "/images/partnership/images/BROMPTON COMUNITY INDONESIA.png": {
+  "src": "/assets/images/partnership/images/brompton-comunity-indonesia.png",
+  "width": 1600,
+  "height": 1480
+ },
+ "/images/partnership/images/Bank_Jateng_logo.svg.png": {
+  "src": "/assets/images/partnership/images/bank-jateng-logo-svg.png",
+  "width": 1200,
+  "height": 553
+ },
+ "/images/partnership/images/Bogor_Agricultural_University_(IPB)_symbol.svg.png": {
+  "src": "/assets/images/partnership/images/bogor-agricultural-university-ipb-symbol-svg.png",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/partnership/images/DANA logo2.png": {
+  "src": "/assets/images/partnership/images/dana-logo2.png",
+  "width": 900,
+  "height": 900
+ },
+ "/images/partnership/images/IBNU TAMIYAH.png": {
+  "src": "/assets/images/partnership/images/ibnu-tamiyah.png",
+  "width": 512,
+  "height": 512
+ },
+ "/images/partnership/images/IKATAN DOKTER ANAK INDONESIA.png": {
+  "src": "/assets/images/partnership/images/ikatan-dokter-anak-indonesia.png",
+  "width": 244,
+  "height": 286
+ },
+ "/images/partnership/images/Lambang_TNI_AL.png": {
+  "src": "/assets/images/partnership/images/lambang-tni-al.png",
+  "width": 425,
+  "height": 460
+ },
+ "/images/partnership/images/Logo-BCA-PNG.png": {
+  "src": "/assets/images/partnership/images/logo-bca-png-1.png",
+  "width": 1600,
+  "height": 1200
+ },
+ "/images/partnership/images/Logo_djp.png": {
+  "src": "/assets/images/partnership/images/logo-djp.png",
+  "width": 1200,
+  "height": 2173
+ },
+ "/images/partnership/images/Nivea-logo.png": {
+  "src": "/assets/images/partnership/images/nivea-logo-1.png",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/partnership/images/OJK_Logo.png": {
+  "src": "/assets/images/partnership/images/ojk-logo.png",
+  "width": 1200,
+  "height": 522
+ },
+ "/images/partnership/images/Perdoski.png": {
+  "src": "/assets/images/partnership/images/perdoski-1.png",
+  "width": 434,
+  "height": 434
+ },
+ "/images/partnership/images/Telkomsel.png": {
+  "src": "/assets/images/partnership/images/telkomsel-1.png",
+  "width": 1600,
+  "height": 1480
+ },
+ "/images/partnership1/WhatsApp Image 2024-05-16 at 10.22.22.jpeg": {
+  "src": "/assets/images/partnership1/whatsapp-image-2024-05-16-at-10-22-22.jpeg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/partnership2/Handpicked Collection.jpg": {
+  "src": "/assets/images/partnership2/handpicked-collection.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/partnership3/Signature Series.jpg": {
+  "src": "/assets/images/partnership3/signature-series.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/partnership4/Customize Batik Pattern.jpg": {
+  "src": "/assets/images/partnership4/customize-batik-pattern.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/partnership5/Batik Corporate Uniform.jpg": {
+  "src": "/assets/images/partnership5/batik-corporate-uniform.jpg",
+  "width": 1600,
+  "height": 1600
+ },
+ "/images/partnerships/eco-label-logo-2.png": {
+  "src": "/assets/images/partnerships/eco-label-logo-2.png",
+  "width": 800,
+  "height": 1000
+ },
+ "/images/testimoni/Testimoni Google Maps (1).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-1.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (10).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-10.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (11).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-11.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (12).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-12.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (13).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-13.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (14).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-14.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (15).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-15.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (16).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-16.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (17).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-17.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (18).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-18.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (19).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-19.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (2).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-2.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (20).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-20.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (3).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-3.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (4).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-4.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (5).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-5.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (6).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-6.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (7).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-7.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (8).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-8.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Google Maps (9).png": {
+  "src": "/assets/images/testimoni/testimoni-google-maps-9.png",
+  "width": 776,
+  "height": 334
+ },
+ "/images/testimoni/Testimoni Shopee_1.png": {
+  "src": "/assets/images/testimoni/testimoni-shopee-1.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni Shopee_10.png": {
+  "src": "/assets/images/testimoni/testimoni-shopee-10.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni Shopee_11.png": {
+  "src": "/assets/images/testimoni/testimoni-shopee-11.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni Shopee_12.png": {
+  "src": "/assets/images/testimoni/testimoni-shopee-12.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni Shopee_13.png": {
+  "src": "/assets/images/testimoni/testimoni-shopee-13.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni Shopee_14.png": {
+  "src": "/assets/images/testimoni/testimoni-shopee-14.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni Shopee_15.png": {
+  "src": "/assets/images/testimoni/testimoni-shopee-15.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni Shopee_2.png": {
+  "src": "/assets/images/testimoni/testimoni-shopee-2.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni Shopee_3.png": {
+  "src": "/assets/images/testimoni/testimoni-shopee-3.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni Shopee_4.png": {
+  "src": "/assets/images/testimoni/testimoni-shopee-4.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni Shopee_5.png": {
+  "src": "/assets/images/testimoni/testimoni-shopee-5.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni Shopee_6.png": {
+  "src": "/assets/images/testimoni/testimoni-shopee-6.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni Shopee_7.png": {
+  "src": "/assets/images/testimoni/testimoni-shopee-7.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni Shopee_8.png": {
+  "src": "/assets/images/testimoni/testimoni-shopee-8.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni Shopee_9.png": {
+  "src": "/assets/images/testimoni/testimoni-shopee-9.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni_1.png": {
+  "src": "/assets/images/testimoni/testimoni-1.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni_10.png": {
+  "src": "/assets/images/testimoni/testimoni-10.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni_3.jpg": {
+  "src": "/assets/images/testimoni/testimoni-3.jpg",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni_3.png": {
+  "src": "/assets/images/testimoni/testimoni-3.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni_4.png": {
+  "src": "/assets/images/testimoni/testimoni-4.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni_5.png": {
+  "src": "/assets/images/testimoni/testimoni-5.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni_6.png": {
+  "src": "/assets/images/testimoni/testimoni-6.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni_7.png": {
+  "src": "/assets/images/testimoni/testimoni-7.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni_8.png": {
+  "src": "/assets/images/testimoni/testimoni-8.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/images/testimoni/Testimoni_9.png": {
+  "src": "/assets/images/testimoni/testimoni-9.png",
+  "width": 1600,
+  "height": 1131
+ },
+ "/static/media/Motif Aksara Sunda.d114195bd27d0b9afdbc.jpg": {
+  "src": "/assets/static-media/motif-aksara-sunda.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Etnik Andam.96aabdf9d088dae53de5.jpg": {
+  "src": "/assets/static-media/motif-etnik-andam.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Etnik Asmat.79d81dd9c79aafd6c87d.jpg": {
+  "src": "/assets/static-media/motif-etnik-asmat.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Etnik Kanatar.76ef7af5e69129a55876.jpg": {
+  "src": "/assets/static-media/motif-etnik-kanatar.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Etnik Kentjana Padjadjaran.3b1c49a5ff8164ae1b2b.jpg": {
+  "src": "/assets/static-media/motif-etnik-kentjana-padjadjaran.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Etnik Kolintang.adeae579e0577b703de1.jpg": {
+  "src": "/assets/static-media/motif-etnik-kolintang.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Etnik Labuan Bajo.93f0c15269b15f233628.jpg": {
+  "src": "/assets/static-media/motif-etnik-labuan-bajo.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Etnik Masalembo.e8ed419ffc4b64e54a88.jpg": {
+  "src": "/assets/static-media/motif-etnik-masalembo.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Etnik Pesona Bali.67f02d0697ad7f2e274d.jpg": {
+  "src": "/assets/static-media/motif-etnik-pesona-bali.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Etnik Pusaka.8c42977078543eb80bec.jpg": {
+  "src": "/assets/static-media/motif-etnik-pusaka.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Etnik Raja Ampat.0ab907f8ae577bc657fc.jpg": {
+  "src": "/assets/static-media/motif-etnik-raja-ampat.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Etnik Serambi Aceh.2bbc4c232076e91e30f5.jpg": {
+  "src": "/assets/static-media/motif-etnik-serambi-aceh.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Etnik Sumba.8bc7009594088545685b.jpg": {
+  "src": "/assets/static-media/motif-etnik-sumba.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Etnik Tana Toraja.1300b6eae338708e00b7.jpg": {
+  "src": "/assets/static-media/motif-etnik-tana-toraja.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Etnik Wakatobi.f3762c4c0219fb5eb1ae.jpg": {
+  "src": "/assets/static-media/motif-etnik-wakatobi.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Kawung Kenari.9b1a7fbfd2ea2af65f45.jpg": {
+  "src": "/assets/static-media/motif-kawung-kenari.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Melasti.295faaa64ab5afa7ccaf.jpg": {
+  "src": "/assets/static-media/motif-melasti.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Prasasti.218f4862b62b82156d58.jpg": {
+  "src": "/assets/static-media/motif-prasasti.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Siger Lampung.88b6e2db4847347baf07.jpg": {
+  "src": "/assets/static-media/motif-siger-lampung.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/Motif Talawang.12c40b27c61c1ede65df.jpg": {
+  "src": "/assets/static-media/motif-talawang.jpg",
+  "width": 1414,
+  "height": 2000
+ },
+ "/static/media/PETA INDONESIA tanpa titik.da83ac7b5a0d97097eba.jpg": {
+  "src": "/assets/static-media/peta-indonesia-tanpa-titik.jpg",
+  "width": 1422,
+  "height": 800
+ },
+ "/static/media/TAKA MAKASSAR.e9131e6e0084832341be.jpg": {
+  "src": "/assets/static-media/taka-makassar.jpg",
+  "width": 1414,
+  "height": 2000
+ }
+}

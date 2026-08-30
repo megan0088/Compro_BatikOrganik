@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+/*
+ * Arah "Soga" — aksen diambil dari pewarna alami produknya sendiri
+ * (soga dari kulit kayu, indigo), bukan dari emas.
+ *
+ * Rasio kontras di bawah dihitung, bukan diperkirakan. Emas #C8A45C yang
+ * sempat direncanakan hanya 2,35:1 di putih dan gagal WCAG AA sebagai teks;
+ * soga #8C5D32 lolos di 5,54:1 tanpa perlu varian tambalan.
+ */
+@theme {
+  /* Netral hangat — bukan abu-abu murni */
+  --color-ink: #17110c; /* 18,41:1 di surface */
+  --color-ink-soft: #58514c; /* 7,66:1 — paragraf sekunder */
+  --color-ink-muted: #736d69; /* 5,01:1 — caption, metadata */
+
+  /* Bidang */
+  --color-surface: #fefdfb;
+  --color-surface-warm: #f8f5f1;
+  --color-surface-deep: #f1ece6;
+  --color-hairline: #e2ddd7;
+
+  /* Aksen — chroma & lightness sama, hanya hue berbeda */
+  --color-soga: #8c5d32; /* 5,54:1 di surface — aman jadi teks */
+  --color-soga-quiet: #f4e5d4;
+  --color-indigo: #51689a; /* 5,44:1 di surface */
+  --color-indigo-deep: #213156; /* 12,61:1 dengan teks putih */
+
+  --font-display: var(--font-newsreader), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-karla), "Helvetica Neue", Arial, sans-serif;
+}
+
+:root {
+  --nav-height: 72px;
+
+  /*
+   * Empat tingkat jarak section. Situs lama memakai satu jarak yang sama
+   * untuk keenam section, jadi tidak ada yang terasa lebih penting.
+   */
+  --space-major: 5rem;
+  --space-default: 4rem;
+  --space-minor: 3rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --nav-height: 104px;
+    --space-major: 7rem;
+    --space-default: 6rem;
+    --space-minor: 4.5rem;
+  }
+}
+
+html {
+  overflow-x: clip;
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem; /* 17px */
+  line-height: 1.7;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+ * Caption dari API datang sebagai HTML (<p>, <em>, <strong>, &nbsp;).
+ * Teks panjang rata kiri dengan lebar maksimum 68 karakter — rata tengah
+ * membuat mata kehilangan tepi kiri setiap ganti baris.
+ */
+.rich-text p {
+  margin-block: 0.85em;
+  max-width: 68ch;
+}
+.rich-text p:first-child { margin-block-start: 0; }
+.rich-text p:last-child { margin-block-end: 0; }
+.rich-text em { font-style: italic; }
+.rich-text strong { font-weight: 600; }
+.rich-text a {
+  color: var(--color-soga);
+  text-underline-offset: 3px;
+  text-decoration: underline;
+}
+.rich-text a:hover { color: var(--color-ink); }
+.rich-text ul { list-style: disc; padding-inline-start: 1.5rem; }
+.rich-text ol { list-style: decimal; padding-inline-start: 1.5rem; }
+.rich-text :is(ul, ol) { max-width: 68ch; margin-block: 0.85em; }
+
+/* Rata tengah hanya untuk blok pendek — judul dan eyebrow. */
+.rich-text-center p,
+.rich-text-center :is(ul, ol) { margin-inline: auto; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
