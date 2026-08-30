@@ -26,7 +26,7 @@ export default function GalleryPage() {
   return (
     <>
       <Container>
-        <PageHero eyebrow={header?.subtitle} title={header?.title ?? "GALLERY"}>
+        <PageHero eyebrow={header?.subtitle} title={header?.title ?? "Gallery"}>
           {header?.caption && <RichText html={header.caption} />}
         </PageHero>
       </Container>
@@ -37,8 +37,8 @@ export default function GalleryPage() {
 
       {photos.length > 0 && (
         <Container>
-          <Section className="!pt-0">
-            <ul className="columns-1 gap-6 sm:columns-2 lg:columns-3 [&>li]:mb-6 [&>li]:break-inside-avoid">
+          <Section tone="minor" className="!pt-0">
+            <ul className="columns-2 gap-4 md:gap-6 lg:columns-3 [&>li]:mb-4 [&>li]:break-inside-avoid md:[&>li]:mb-6">
               {photos.map((row) => {
                 const img = asset(row.image_url);
                 if (!img) return null;
@@ -50,7 +50,7 @@ export default function GalleryPage() {
                       width={img.width}
                       height={img.height}
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
-                      className="w-full rounded-md object-cover"
+                      className="w-full"
                     />
                   </li>
                 );

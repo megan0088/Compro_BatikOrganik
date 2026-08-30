@@ -1,6 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
 import PageHero from "@/components/sections/PageHero";
+import CollectionCard from "@/components/ui/CollectionCard";
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 import { asset } from "@/lib/assets";
@@ -17,43 +16,27 @@ export const metadata = pageMetadata({
 export default function CollectionIndex() {
   return (
     <Container>
-      <PageHero eyebrow="INDONESIA ARTSY BATIK" title="OUR COLLECTION" />
-      <Section className="!pt-0">
-        <ul className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-          {categories.map((c) => {
-            const img = asset(c.image_url);
-            const count = itemsForCategory(c.id).length;
-            return (
-              <li key={c.id}>
-                <Link
-                  href={`/collection/${c.id}`}
-                  className="group block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
-                >
-                  {img && (
-                    <Image
-                      src={img.src}
-                      alt={c.title}
-                      width={img.width}
-                      height={img.height}
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 380px"
-                      className="aspect-square w-full object-cover transition-opacity group-hover:opacity-90"
-                    />
-                  )}
-                  <p className="font-display pt-4 text-xl uppercase tracking-[0.1em]">
-                    {c.title}
-                  </p>
-                  {count > 0 && (
-                    <p className="font-sans font-light pt-1 text-sm">
-                      {count} item
-                    </p>
-                  )}
-                  <p className="font-display m-auto max-w-[36rem] pt-2">
-                    {plain(c.description, 120)}
-                  </p>
-                </Link>
-              </li>
-            );
-          })}
+      <PageHero eyebrow="Indonesia Artsy Batik" title="Our Collection">
+        <p>
+          Enam jalan masuk ke satu warisan — batik cap, batik tulis, dan tenun,
+          dalam bahasa yang dipakai hari ini.
+        </p>
+      </PageHero>
+
+      <Section tone="minor" className="!pt-0">
+        <ul className="grid grid-cols-2 gap-x-4 gap-y-9 md:gap-x-7 md:gap-y-12 lg:grid-cols-3">
+          {categories.map((c, i) => (
+            <li key={c.id}>
+              <CollectionCard
+                href={`/collection/${c.id}`}
+                title={c.title}
+                image={asset(c.image_url)}
+                count={itemsForCategory(c.id).length}
+                blurb={plain(c.description, 96)}
+                priority={i < 3}
+              />
+            </li>
+          ))}
         </ul>
       </Section>
     </Container>

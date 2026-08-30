@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import PageHero from "@/components/sections/PageHero";
 import ActionButton from "@/components/ui/ActionButton";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 import Container from "@/components/ui/Container";
+import Heading, { Eyebrow } from "@/components/ui/Heading";
 import RichText from "@/components/ui/RichText";
 import Section from "@/components/ui/Section";
 import { asset } from "@/lib/assets";
@@ -38,86 +38,93 @@ export default async function CollectionDetail({
   const cover = asset(category.image_url);
 
   return (
-    <Container>
-      <nav aria-label="Breadcrumb" className="pt-[calc(var(--nav-height)+1.5rem)]">
-        <ol className="font-sans font-light flex justify-center gap-2 text-sm uppercase">
-          <li>
-            <Link href="/" className="hover:opacity-70">
-              Beranda
-            </Link>
-          </li>
-          <li aria-hidden="true">/</li>
-          <li>
-            <Link href="/collection" className="hover:opacity-70">
-              Our Collection
-            </Link>
-          </li>
-          <li aria-hidden="true">/</li>
-          <li aria-current="page">{category.title}</li>
-        </ol>
-      </nav>
-
-      <PageHero title={category.title.toUpperCase()}>
-        <RichText html={category.description} />
-      </PageHero>
-
-      {cover && (
-        <Image
-          src={cover.src}
-          alt={`Koleksi ${category.title}`}
-          width={cover.width}
-          height={cover.height}
-          sizes="(max-width: 1240px) 100vw, 1208px"
-          priority
-          className="w-full rounded-md object-cover"
+    <>
+      <Container>
+        <Breadcrumb
+          trail={[
+            { label: "Beranda", href: "/" },
+            { label: "Our Collection", href: "/collection" },
+          ]}
+          current={category.title}
         />
-      )}
 
-      <Section>
-        {items.length > 0 ? (
-          <ul className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-            {items.map((item) => {
-              const img = asset(item.image_url);
-              return (
-                <li key={item.id}>
-                  {img && (
-                    <Image
-                      src={img.src}
-                      alt={item.name}
-                      width={img.width}
-                      height={img.height}
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 380px"
-                      className="aspect-[3/4] w-full rounded-md object-cover"
-                    />
-                  )}
-                  <h2 className="font-display pt-4 text-xl uppercase tracking-[0.1em]">
-                    {item.name}
-                  </h2>
-                  <RichText
-                    html={item.description}
-                    className="font-display pt-2"
-                  />
-                </li>
-              );
-            })}
-          </ul>
-        ) : (
-          <p className="font-display lg:text-xl">
-            Koleksi ini sedang disiapkan. Hubungi kami untuk katalog terbaru.
-          </p>
-        )}
-
-        <div className="pt-12">
-          <ActionButton
-            href={waLink(
-              CONTACT.whatsappRetail,
-              `Halo BatikOrganik, saya tertarik dengan koleksi ${category.title}.`,
-            )}
-          >
-            Tanya Koleksi {category.title}
-          </ActionButton>
+        <div className="flex flex-col gap-10 pb-12 pt-8 md:flex-row md:items-center md:gap-16">
+          <div className="flex flex-col items-start gap-5 md:w-1/2">
+            <Eyebrow>Koleksi</Eyebrow>
+            <Heading as="h1" className="max-w-[14ch]">
+              {category.title}
+            </Heading>
+            <RichText
+              html={category.description}
+              className="font-sans text-[1.0625rem] leading-[1.7] text-ink-soft"
+            />
+          </div>
+          {cover && (
+            <div className="md:w-1/2">
+              <Image
+                src={cover.src}
+                alt={`Koleksi ${category.title}`}
+                width={cover.width}
+                height={cover.height}
+                sizes="(max-width: 768px) 100vw, 560px"
+                priority
+                className="w-full object-cover"
+              />
+            </div>
+          )}
         </div>
-      </Section>
-    </Container>
+      </Container>
+
+      <Container>
+        <Section tone="minor" className="!pt-0">
+          {items.length > 0 ? (
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-9 md:gap-x-7 md:gap-y-12 lg:grid-cols-3">
+              {items.map((item) => {
+                const img = asset(item.image_url);
+                return (
+                  <li key={item.id} className="flex flex-col gap-4">
+                    {img && (
+                      <div className="relative aspect-square w-full overflow-hidden bg-surface-deep">
+                        <Image
+                          src={img.src}
+                          alt={item.name}
+                          fill
+                          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 380px"
+                          className="object-cover"
+                        />
+                      </div>
+                    )}
+                    <div className="flex flex-col gap-2 border-t border-hairline pt-3.5">
+                      <h2 className="font-display text-[1.25rem] leading-tight">
+                        {item.name}
+                      </h2>
+                      <RichText
+                        html={item.description}
+                        className="font-sans text-[0.9375rem] leading-relaxed text-ink-soft"
+                      />
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          ) : (
+            <p className="font-sans text-[1.0625rem] leading-[1.7] text-ink-soft">
+              Koleksi ini sedang disiapkan. Hubungi kami untuk katalog terbaru.
+            </p>
+          )}
+
+          <div className="pt-12">
+            <ActionButton
+              href={waLink(
+                CONTACT.whatsappRetail,
+                `Halo BatikOrganik, saya tertarik dengan koleksi ${category.title}.`,
+              )}
+            >
+              Tanya Koleksi {category.title}
+            </ActionButton>
+          </div>
+        </Section>
+      </Container>
+    </>
   );
 }

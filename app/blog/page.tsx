@@ -28,9 +28,11 @@ export default function BlogIndex() {
 
   return (
     <Container>
-      <PageHero title="BLOG" />
-      <Section className="!pt-0">
-        <ul className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+      <PageHero eyebrow="Jurnal" title="Blog">
+        <p>Kabar, kolaborasi, dan cerita dari balik meja kerja BatikOrganik.</p>
+      </PageHero>
+      <Section tone="minor" className="!pt-0">
+        <ul className="grid gap-x-7 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => {
             const img = asset(post.image_url);
             const slug = slugify(post.title);
@@ -47,16 +49,16 @@ export default function BlogIndex() {
                       width={img.width}
                       height={img.height}
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 380px"
-                      className="aspect-[4/3] w-full rounded-md object-cover transition-opacity group-hover:opacity-90"
+                      className="aspect-video w-full object-cover transition-opacity group-hover:opacity-90"
                     />
                   )}
-                  <p className="font-sans font-light pt-3 text-sm">
+                  <p className="pt-3 font-sans text-[0.8125rem] uppercase tracking-[0.14em] text-ink-muted">
                     {dateFmt.format(new Date(post.created_at))}
                   </p>
-                  <h2 className="font-display pt-1 text-xl leading-7">
+                  <h2 className="pt-1 font-display text-[1.375rem] leading-tight decoration-soga underline-offset-4 group-hover:underline">
                     {post.title}
                   </h2>
-                  <p className="font-sans pt-2 text-[1.125rem] leading-7">
+                  <p className="pt-2 font-sans text-[0.9375rem] leading-relaxed text-ink-soft">
                     {plain(post.description, 140)}
                   </p>
                 </Link>

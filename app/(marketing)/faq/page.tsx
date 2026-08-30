@@ -33,25 +33,31 @@ export default function FaqPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <PageHero eyebrow="CONNECT" title="FAQ" />
+      <PageHero eyebrow="Connect" title="Pertanyaan Umum" />
 
       {groups.map((group) => (
-        <Section key={group} className="!pt-0">
-          <Heading as="h2" className="!text-xl">
-            {group.toUpperCase()}
+        <Section key={group} tone="minor" className="!pt-0">
+          <Heading as="h2" level="h3">
+            {group}
           </Heading>
-          <ul className="m-auto max-w-[54rem] pt-6 text-left">
+          <ul className="max-w-[68ch] pt-6">
             {faqs
               .filter((f) => f.type_label === group)
               .map((f) => (
                 <li key={f.question} className="border-b border-hairline">
                   <details className="group py-4">
-                    <summary className="font-sans font-medium cursor-pointer list-none text-[1.125rem] leading-7 marker:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink">
+                    <summary className="flex cursor-pointer list-none items-baseline gap-3 font-sans text-[1.0625rem] font-medium leading-[1.6] marker:hidden hover:text-soga focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-soga">
+                      <span
+                        aria-hidden="true"
+                        className="mt-1 shrink-0 text-soga transition-transform group-open:rotate-45"
+                      >
+                        +
+                      </span>
                       {f.question}
                     </summary>
                     <RichText
                       html={f.answer}
-                      className="font-display pt-3 lg:text-xl"
+                      className="pl-6 pt-3 font-sans text-[1.0625rem] leading-[1.7] text-ink-soft"
                     />
                   </details>
                 </li>

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 import Container from "@/components/ui/Container";
 import Heading from "@/components/ui/Heading";
 import RichText from "@/components/ui/RichText";
@@ -61,28 +61,20 @@ export default async function BlogPost({ params }: PageProps<"/blog/[slug]">) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <nav aria-label="Breadcrumb" className="pt-[calc(var(--nav-height)+1.5rem)]">
-        <ol className="font-sans font-light flex flex-wrap justify-center gap-2 text-sm uppercase">
-          <li>
-            <Link href="/" className="hover:opacity-70">
-              Beranda
-            </Link>
-          </li>
-          <li aria-hidden="true">/</li>
-          <li>
-            <Link href="/blog" className="hover:opacity-70">
-              Blog
-            </Link>
-          </li>
-        </ol>
-      </nav>
+      <Breadcrumb
+        trail={[
+          { label: "Beranda", href: "/" },
+          { label: "Blog", href: "/blog" },
+        ]}
+        current={post.title.slice(0, 40)}
+      />
 
-      <article className="m-auto max-w-[54rem] px-5">
-        <header className="py-10 text-center">
-          <p className="font-sans font-light pb-1 text-sm">
+      <article className="max-w-[68ch]">
+        <header className="flex flex-col items-start gap-4 py-10">
+          <p className="font-sans text-[0.8125rem] uppercase tracking-[0.14em] text-ink-muted">
             {dateFmt.format(new Date(post.created_at))} · {post.admin}
           </p>
-          <Heading as="h1" className="!text-[1.75rem] !leading-9">
+          <Heading as="h1" className="max-w-[24ch]">
             {post.title}
           </Heading>
         </header>
@@ -95,14 +87,14 @@ export default async function BlogPost({ params }: PageProps<"/blog/[slug]">) {
             height={img.height}
             sizes="(max-width: 864px) 100vw, 824px"
             priority
-            className="w-full rounded-md object-cover"
+            className="w-full object-cover"
           />
         )}
 
         <Section>
           <RichText
             html={post.description}
-            className="font-display text-left lg:text-xl"
+            className="font-sans text-[1.0625rem] leading-[1.75] text-ink-soft"
           />
         </Section>
       </article>

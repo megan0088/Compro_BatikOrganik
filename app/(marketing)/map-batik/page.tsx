@@ -21,7 +21,7 @@ export default function MapBatikPage() {
 
   return (
     <Container>
-      <PageHero eyebrow="PHILOSOPHY OF BATIK" title="JEJAK BATIK">
+      <PageHero eyebrow="Philosophy of Batik" title="Jejak Batik">
         <div
           className="rich-text"
           dangerouslySetInnerHTML={{ __html: contact.caption_contact }}
@@ -40,11 +40,11 @@ export default function MapBatikPage() {
         />
       )}
 
-      <Section>
-        <Heading as="h2" className="!text-xl">
-          {batikMotifs.length} MOTIF · {regions.length} DAERAH
+      <Section tone="minor">
+        <Heading as="h2" level="h3">
+          {batikMotifs.length} motif · {regions.length} daerah
         </Heading>
-        <ul className="grid gap-10 pt-10 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid grid-cols-2 gap-x-4 gap-y-9 pt-10 md:gap-x-7 md:gap-y-12 lg:grid-cols-3">
           {batikMotifs.map((m, i) => {
             const img = asset(m.image_url);
             return (
@@ -56,13 +56,15 @@ export default function MapBatikPage() {
                     width={img.width}
                     height={img.height}
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
-                    className="aspect-square w-full rounded-md object-cover"
+                    className="aspect-square w-full object-cover"
                   />
                 )}
-                <h3 className="font-display pt-4 text-xl uppercase tracking-[0.1em]">
+                <h3 className="border-t border-hairline pt-3.5 font-display text-[1.25rem] leading-tight">
                   {m.motif.replace(/^Motif\s+/i, "")}
                 </h3>
-                <p className="font-sans font-light pt-1 text-sm">{m.region}</p>
+                <p className="pt-1 font-sans text-[0.8125rem] uppercase tracking-[0.1em] text-ink-muted">
+                  {m.region}
+                </p>
               </li>
             );
           })}

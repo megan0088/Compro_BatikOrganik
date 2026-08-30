@@ -35,7 +35,7 @@ export default async function CampaignPage({
 
   return (
     <Container>
-      <PageHero eyebrow={campaign.name.toUpperCase()} title={campaign.title} />
+      <PageHero eyebrow={campaign.name} title={campaign.title} />
 
       {img && (
         <Image
@@ -45,14 +45,14 @@ export default async function CampaignPage({
           height={img.height}
           sizes="(max-width: 1240px) 100vw, 1208px"
           priority
-          className="w-full rounded-md object-cover"
+          className="w-full object-cover"
         />
       )}
 
       <Section>
         <RichText
           html={campaign.description}
-          className="font-display m-auto max-w-[54rem] px-5 lg:text-xl"
+          className="max-w-[68ch] font-sans text-[1.0625rem] leading-[1.7] text-ink-soft"
         />
         <div className="pt-10">
           <ActionButton href="/collection">Lihat Koleksi</ActionButton>

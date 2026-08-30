@@ -16,15 +16,15 @@ export const metadata = pageMetadata({
 export default function ReviewPage() {
   return (
     <Container>
-      <PageHero eyebrow="ABOUT" title="TESTIMONIAL">
+      <PageHero eyebrow="About" title="Testimonial">
         <p>
           Ulasan yang ditulis pembeli BatikOrganik di Google Maps, Shopee, dan
           pesan langsung.
         </p>
       </PageHero>
 
-      <Section className="!pt-0">
-        <ul className="columns-1 gap-6 sm:columns-2 lg:columns-3 [&>li]:mb-6 [&>li]:break-inside-avoid">
+      <Section tone="minor" className="!pt-0">
+        <ul className="columns-2 gap-4 md:gap-6 lg:columns-3 [&>li]:mb-4 [&>li]:break-inside-avoid md:[&>li]:mb-6">
           {testimonials.map((t) => {
             const img = asset(t.image_url);
             if (!img) return null;
@@ -36,7 +36,7 @@ export default function ReviewPage() {
                   width={img.width}
                   height={img.height}
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
-                  className="w-full rounded-md border border-hairline"
+                  className="w-full border border-hairline"
                 />
               </li>
             );

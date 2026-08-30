@@ -29,7 +29,7 @@ export default function PartnershipPage() {
     <Container>
       <PageHero
         eyebrow={header?.subtitle}
-        title={header?.title ?? "PARTNERSHIP"}
+        title={header?.title ?? "Partnership"}
       >
         {header?.caption && <RichText html={header.caption} />}
       </PageHero>
@@ -42,13 +42,13 @@ export default function PartnershipPage() {
           height={headerImg.height}
           sizes="(max-width: 1240px) 100vw, 1208px"
           priority
-          className="w-full rounded-md object-cover"
+          className="w-full object-cover"
         />
       )}
 
       {offerings.length > 0 && (
         <Section>
-          <ul className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <ul className="grid grid-cols-2 gap-x-4 gap-y-9 md:gap-x-7 lg:grid-cols-4">
             {offerings.map((row) => {
               const img = asset(row.image_url);
               return (
@@ -60,14 +60,14 @@ export default function PartnershipPage() {
                       width={img.width}
                       height={img.height}
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 280px"
-                      className="aspect-[3/4] w-full rounded-md object-cover"
+                      className="aspect-square w-full object-cover"
                     />
                   )}
-                  <h2 className="font-display pt-4 text-xl uppercase tracking-[0.1em]">
+                  <h2 className="border-t border-hairline pt-3.5 font-display text-[1.25rem] leading-tight">
                     {row.title}
                   </h2>
                   {row.caption && (
-                    <RichText html={row.caption} className="font-display pt-2" />
+                    <RichText html={row.caption} className="pt-2 font-sans text-[0.9375rem] leading-relaxed text-ink-soft" />
                   )}
                 </li>
               );
@@ -80,7 +80,7 @@ export default function PartnershipPage() {
         <Section className="!pt-0">
           <Heading as="h2">{clientHeading?.title ?? "OUR CLIENT"}</Heading>
           {stat?.title && (
-            <p className="font-display pt-4 text-xl tracking-[0.1em]">
+            <p className="pt-4 font-display text-[2rem] leading-tight text-soga">
               {stat.title}
             </p>
           )}
