@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import PageHero from "@/components/sections/PageHero";
 import ActionButton from "@/components/ui/ActionButton";
 import Container from "@/components/ui/Container";
@@ -104,6 +105,47 @@ export default function PartnershipPage() {
           </ul>
         </Section>
       )}
+
+      {/* Jalur masuk ke tiga alur bingkisan. Tanpa ini halaman-halaman itu
+          hanya bisa dicapai lewat URL lama. */}
+      <Section tone="minor" className="!pt-0">
+        <Heading as="h2" level="h3" className="pb-8">
+          Mulai dari mana?
+        </Heading>
+        <ul className="grid gap-6 md:grid-cols-3">
+          {[
+            {
+              href: "/partnership/hampers",
+              title: "Hampers siap kirim",
+              blurb: "Sudah dirangkai, tinggal pilih dan tambahkan kartu.",
+            },
+            {
+              href: "/partnership/build",
+              title: "Rangkai sendiri",
+              blurb: "Pilih kemasan, isian, dan kartunya satu per satu.",
+            },
+            {
+              href: "/partnership/custom",
+              title: "Custom untuk perusahaan",
+              blurb: "Motif dan kemasan disesuaikan dengan identitas Anda.",
+            },
+          ].map((c) => (
+            <li key={c.href}>
+              <Link
+                href={c.href}
+                className="group flex h-full flex-col gap-2 border-t border-hairline pt-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-soga"
+              >
+                <span className="font-display text-[1.25rem] leading-tight decoration-soga underline-offset-4 group-hover:underline">
+                  {c.title}
+                </span>
+                <span className="font-sans text-[0.9375rem] leading-relaxed text-ink-soft">
+                  {c.blurb}
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </Section>
 
       <Section className="!pt-0">
         <ActionButton

@@ -1,6 +1,8 @@
 import homeJson from "@/content/api/home.json";
 import categoryJson from "@/content/api/category.json";
 import campaignJson from "@/content/api/campaign.json";
+import categoryHampersJson from "@/content/api/category-hampers.json";
+import corporateJson from "@/content/api/corporate.json";
 import contactJson from "@/content/api/contact.json";
 import aboutJson from "@/content/api/about.json";
 import blogJson from "@/content/api/blog.json";
@@ -213,3 +215,42 @@ export type BatikMotif = {
  * datanya hardcoded di bundle JavaScript, jadi diekstrak dari sana.
  */
 export const batikMotifs = mapBatikJson.data as unknown as BatikMotif[];
+
+/* ---------- Hampers & bingkisan korporat ---------- */
+
+export type HamperSection = "hampers" | "gift" | "card" | "packaging";
+
+export type HamperItem = {
+  id: number;
+  section: HamperSection;
+  name: string;
+  image_url: string;
+  category_id: number;
+  type: string | null;
+  description: string | null;
+};
+
+export type HamperCategory = {
+  id: number;
+  title: string;
+  description: string;
+  section: string;
+};
+
+/** Isi konfigurator hampers: kotak, isian, kartu, dan kemasan. */
+export const hamperItems: HamperItem[] = (
+  corporateJson.data as unknown as Array<Record<string, unknown>>
+).map((r) => ({
+  ...(r as unknown as HamperItem),
+  id: Number(r.id),
+  category_id: Number(r.category_id),
+}));
+
+export const hamperCategories =
+  categoryHampersJson.data as unknown as HamperCategory[];
+
+export const hamperItemsIn = (section: HamperSection) =>
+  hamperItems.filter((i) => i.section === section);
+
+export const hamperCategoriesIn = (section: string) =>
+  hamperCategories.filter((c) => c.section === section);

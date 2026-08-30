@@ -32,6 +32,16 @@ const nextConfig: NextConfig = {
     { source: "/blog/17", destination: "/blog/tantangan-dan-strategi-berbisnis-inklusif-ala-founder-batik-organik", permanent: true },
       // Halaman kosong di situs lama — tidak pernah menampilkan apa pun.
       { source: "/gallery-review", destination: "/gallery", permanent: true },
+      /*
+       * Halaman seragam kantor. Isinya kata kunci korporat yang menurut
+       * keputusan BO-49 milik domain terpisah — menaruhnya di sini justru
+       * mengulang kanibalisasi yang keputusan itu ingin hentikan.
+       */
+      {
+        source: "/partnership/corpo",
+        destination: "https://batikorganikcorporate.id",
+        permanent: true,
+      },
     ];
   },
 };

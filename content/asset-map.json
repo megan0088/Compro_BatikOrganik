@@ -178,6 +178,11 @@
   "width": 1600,
   "height": 1600
  },
+ "/images/category2/Banner Hampers SHopee_2.jpg": {
+  "src": "/assets/images/category2/banner-hampers-shopee-2.jpg",
+  "width": 1600,
+  "height": 900
+ },
  "/images/category2/LANDING PAGE_WOMEN.jpg": {
   "src": "/assets/images/category2/landing-page-women.jpg",
   "width": 1600,
@@ -188,6 +193,11 @@
   "width": 1600,
   "height": 696
  },
+ "/images/category3/Banner Hampers SHopee_3.jpg": {
+  "src": "/assets/images/category3/banner-hampers-shopee-3.jpg",
+  "width": 1600,
+  "height": 900
+ },
  "/images/category3/LANDING PAGE_MEN2.jpg": {
   "src": "/assets/images/category3/landing-page-men2.jpg",
   "width": 1600,
@@ -197,6 +207,11 @@
   "src": "/assets/images/category3/landing-page-men2-crop2.jpg",
   "width": 1600,
   "height": 696
+ },
+ "/images/category4/Banner Hampers SHopee_5.jpg": {
+  "src": "/assets/images/category4/banner-hampers-shopee-5.jpg",
+  "width": 1080,
+  "height": 608
  },
  "/images/category4/LANDING PAGE_ORGANIC FABRIC.jpg": {
   "src": "/assets/images/category4/landing-page-organic-fabric.jpg",
@@ -447,6 +462,126 @@
   "src": "/assets/images/gallery/visit-store-concept-photo-2-done-payment.jpg",
   "width": 1600,
   "height": 1000
+ },
+ "/images/hampers/card/17/giftCard.png": {
+  "src": "/assets/images/hampers/card/17/giftcard.png",
+  "width": 626,
+  "height": 626
+ },
+ "/images/hampers/card/19/giftCard.png": {
+  "src": "/assets/images/hampers/card/19/giftcard.png",
+  "width": 626,
+  "height": 626
+ },
+ "/images/hampers/card/5/giftCard.png": {
+  "src": "/assets/images/hampers/card/5/giftcard.png",
+  "width": 626,
+  "height": 626
+ },
+ "/images/hampers/card/7/giftCard.png": {
+  "src": "/assets/images/hampers/card/7/giftcard.png",
+  "width": 626,
+  "height": 626
+ },
+ "/images/hampers/gift/14/women-batik.jpeg": {
+  "src": "/assets/images/hampers/gift/14/women-batik.jpeg",
+  "width": 1024,
+  "height": 1024
+ },
+ "/images/hampers/gift/16/gift-batik.jpeg": {
+  "src": "/assets/images/hampers/gift/16/gift-batik.jpeg",
+  "width": 600,
+  "height": 800
+ },
+ "/images/hampers/gift/18/gift-batik.jpeg": {
+  "src": "/assets/images/hampers/gift/18/gift-batik.jpeg",
+  "width": 600,
+  "height": 800
+ },
+ "/images/hampers/gift/2/men-batik.jpeg": {
+  "src": "/assets/images/hampers/gift/2/men-batik.jpeg",
+  "width": 762,
+  "height": 1100
+ },
+ "/images/hampers/gift/24/craft-batik.jpeg": {
+  "src": "/assets/images/hampers/gift/24/craft-batik.jpeg",
+  "width": 300,
+  "height": 300
+ },
+ "/images/hampers/hampers/1/Banner Hampers SHopee_5.jpg": {
+  "src": "/assets/images/hampers/hampers/1/banner-hampers-shopee-5.jpg",
+  "width": 1080,
+  "height": 608
+ },
+ "/images/hampers/hampers/11/Banner Hampers SHopee_5.jpg": {
+  "src": "/assets/images/hampers/hampers/11/banner-hampers-shopee-5.jpg",
+  "width": 1080,
+  "height": 608
+ },
+ "/images/hampers/hampers/13/Banner Hampers SHopee_5.jpg": {
+  "src": "/assets/images/hampers/hampers/13/banner-hampers-shopee-5.jpg",
+  "width": 1080,
+  "height": 608
+ },
+ "/images/hampers/hampers/15/Banner Hampers SHopee_5.jpg": {
+  "src": "/assets/images/hampers/hampers/15/banner-hampers-shopee-5.jpg",
+  "width": 1080,
+  "height": 608
+ },
+ "/images/hampers/hampers/3/Banner Hampers SHopee_a.jpg": {
+  "src": "/assets/images/hampers/hampers/3/banner-hampers-shopee-a.jpg",
+  "width": 1080,
+  "height": 608
+ },
+ "/images/hampers/hampers/4/Banner Hampers SHopee_3.jpg": {
+  "src": "/assets/images/hampers/hampers/4/banner-hampers-shopee-3.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/hampers/hampers/6/Banner Hampers SHopee_5.jpg": {
+  "src": "/assets/images/hampers/hampers/6/banner-hampers-shopee-5.jpg",
+  "width": 1080,
+  "height": 608
+ },
+ "/images/hampers/hampers/8/Banner Hampers SHopee_3.jpg": {
+  "src": "/assets/images/hampers/hampers/8/banner-hampers-shopee-3.jpg",
+  "width": 1600,
+  "height": 900
+ },
+ "/images/hampers/hampers/9/Banner Hampers SHopee_5.jpg": {
+  "src": "/assets/images/hampers/hampers/9/banner-hampers-shopee-5.jpg",
+  "width": 1080,
+  "height": 608
+ },
+ "/images/hampers/packaging/10/Banner Hampers SHopee_5.jpg": {
+  "src": "/assets/images/hampers/packaging/10/banner-hampers-shopee-5.jpg",
+  "width": 1080,
+  "height": 608
+ },
+ "/images/hampers/packaging/12/Banner Hampers SHopee_5.jpg": {
+  "src": "/assets/images/hampers/packaging/12/banner-hampers-shopee-5.jpg",
+  "width": 1080,
+  "height": 608
+ },
+ "/images/hampers/packaging/20/Banner Hampers SHopee_5.jpg": {
+  "src": "/assets/images/hampers/packaging/20/banner-hampers-shopee-5.jpg",
+  "width": 1080,
+  "height": 608
+ },
+ "/images/hampers/packaging/21/gift-batik.jpeg": {
+  "src": "/assets/images/hampers/packaging/21/gift-batik.jpeg",
+  "width": 600,
+  "height": 800
+ },
+ "/images/hampers/packaging/22/gift-batik.jpeg": {
+  "src": "/assets/images/hampers/packaging/22/gift-batik.jpeg",
+  "width": 600,
+  "height": 800
+ },
+ "/images/hampers/packaging/23/gift-batik.jpeg": {
+  "src": "/assets/images/hampers/packaging/23/gift-batik.jpeg",
+  "width": 600,
+  "height": 800
  },
  "/images/home/carousel/20/Organic Fabric text.jpg": {
   "src": "/assets/images/home/carousel/20/organic-fabric-text.jpg",

@@ -23,6 +23,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: url("/faq"), lastModified: now, changeFrequency: "yearly", priority: 0.7 },
     { url: url("/review"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: url("/partnership"), lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: url("/partnership/hampers"), lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: url("/partnership/build"), lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: url("/partnership/custom"), lastModified: now, changeFrequency: "yearly", priority: 0.5 },
     { url: url("/map-batik"), lastModified: now, changeFrequency: "yearly", priority: 0.6 },
     { url: url("/blog"), lastModified: now, changeFrequency: "weekly", priority: 0.7 },
   ];

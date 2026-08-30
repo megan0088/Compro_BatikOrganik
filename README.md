@@ -125,7 +125,8 @@ tautan navbar — empat sub-halaman partnership tidak pernah muncul di menu.
 | `/`, `/about`, `/about-batik`, `/contact`, `/faq`, `/gallery`, `/review`, `/partnership`, `/map-batik`, `/blog`, `/collection`, `/collection/:id`, `/campaign/:id` | dipertahankan apa adanya |
 | `/blog/0` … `/blog/17` | **redirect** ke slug dari judul (`next.config.ts`) |
 | `/gallery-review` | **redirect** ke `/gallery` — halaman ini kosong di situs lama |
-| `/partnership/corpo`, `/hampers`, `/custom`, `/build` | **belum dibangun** — lihat di bawah |
+| `/partnership/hampers`, `/build`, `/custom` | dibangun ulang sebagai konfigurator bingkisan |
+| `/partnership/corpo` | **redirect** ke `batikorganikcorporate.id` — isinya kata kunci korporat yang menurut BO-49 milik domain itu |
 | `/admin`, `/api/*` | hilang bersama backend lama |
 
 Situs lama memberi artikel URL berdasarkan POSISI dalam array `/api/blog`,
@@ -141,9 +142,4 @@ Google memperlakukannya sama dengan 301.
 - **Slug artikel blog.** `/api/blog` tidak memberi id atau slug, jadi slug
   diturunkan dari judul (`slugify`). URL artikel karena itu **baru** — belum ada
   URL lama yang perlu dipertahankan.
-- **Empat sub-halaman partnership** (`/partnership/corpo`, `/hampers`,
-  `/custom`, `/build`). Isinya nyata dan datang dari dua endpoint yang belum
-  di-snapshot — `/api/uniforms` (7 blok, halaman seragam kantor) dan
-  `/api/corporate` (24 item hampers) — plus 29 gambar yang belum diunduh.
-  Perlu keputusan: dibangun, atau di-redirect ke `/partnership`.
 - Gambar Open Graph 1200×630 dan GTM.
