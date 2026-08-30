@@ -33,6 +33,7 @@ export type Category = {
   description: string;
   image_url: string;
   cover_image_url: string | null;
+  updated_at: string;
 };
 
 export type Campaign = {
@@ -41,6 +42,7 @@ export type Campaign = {
   title: string;
   description: string;
   image_url: string;
+  updated_at: string;
 };
 
 /**
