@@ -279,7 +279,7 @@ export default function Home() {
         const strip = bts.slice(1);
         return (
           <Section tone="flush">
-            <div className="bg-indigo-deep py-[var(--space-default)] text-surface">
+            <div className="bg-indigo-deep pb-[var(--space-minor)] pt-[var(--space-default)] text-surface">
               <Container>
                 <div className="flex flex-col gap-10 md:flex-row md:items-center md:gap-16">
                   <div className="flex flex-col items-start gap-5 md:w-1/2">
@@ -324,7 +324,7 @@ export default function Home() {
                   videoId={videoOf(5)!.id}
                   poster={videoOf(5)!.poster}
                   title="Dedikasi pengrajin BatikOrganik"
-                  className="mt-[var(--space-default)]"
+                  className="mt-[var(--space-minor)]"
                 />
               </Container>
             )}
@@ -379,7 +379,7 @@ export default function Home() {
                 videoId={videoOf(6)!.id}
                 poster={videoOf(6)!.poster}
                 title="Program penanaman pohon BatikOrganik"
-                className="mt-[var(--space-default)]"
+                className="mt-[var(--space-minor)]"
               />
             )}
           </Container>
