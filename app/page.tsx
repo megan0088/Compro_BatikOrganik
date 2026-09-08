@@ -155,7 +155,7 @@ export default function Home() {
             </p>
           </div>
           <ul className="grid grid-cols-2 gap-x-4 gap-y-9 md:gap-x-7 md:gap-y-12 lg:grid-cols-3">
-            {categories.map((c, i) => (
+            {categories.map((c) => (
               <li key={c.id}>
                 <CollectionCard
                   href={`/collection/${c.id}`}
@@ -163,7 +163,8 @@ export default function Home() {
                   image={asset(c.image_url)}
                   count={itemsForCategory(c.id).length}
                   blurb={plain(c.description)}
-                  priority={i < 3}
+                  /* Tanpa priority: grid koleksi ada di bawah lipatan, jadi
+                     memuatnya lebih awal justru merebut bandwidth dari hero. */
                 />
               </li>
             ))}

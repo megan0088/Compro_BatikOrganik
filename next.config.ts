@@ -1,17 +1,21 @@
 import type { NextConfig } from "next";
 
 /*
- * Situs lama memberi artikel URL berdasarkan POSISI dalam array /api/blog
- * (`/blog/0` … `/blog/17`), bukan id atau slug. Skema itu rapuh — urutan
- * berubah, URL ikut berubah — jadi versi baru memakai slug dari judul.
+ * Satu repo, dua target.
  *
- * Peta di bawah dihasilkan dari urutan array yang sama, jadi setiap URL lama
- * yang sudah terindeks atau pernah dibagikan tetap mendarat di artikel yang
- * benar. Tanpa ini, 18 artikel jadi 404 saat cutover.
+ * Vercel (default)          : mode server — redirect ditangani Next.
+ * Hostinger (STATIC_EXPORT=1): `next build` menghasilkan folder `out/` berisi
+ *   HTML statis. Mode ini TIDAK mendukung `redirects()`, jadi aturan yang sama
+ *   digandakan ke `public/.htaccess` — dihasilkan oleh `scripts/gen-htaccess.mjs`
+ *   dari sumber yang sama supaya keduanya tidak bisa berbeda.
+ *
+ * `images.unoptimized` menyala di kedua mode: hosting statis tidak punya
+ * Image Optimization API, dan aset di repo sudah WebP seukuran tampilnya —
+ * jadi mengoptimalkan ulang tidak memberi apa-apa.
  */
-const nextConfig: NextConfig = {
-  async redirects() {
-    return [
+const isStaticExport = process.env.STATIC_EXPORT === "1";
+
+export const REDIRECTS = [
     { source: "/blog/0", destination: "/blog/9th-tpo-general-assembly-common-prosperity-in-tourism-through-open-partnership-2", permanent: true },
     { source: "/blog/1", destination: "/blog/indonesia-city-expo-2022-padang-7-10-agustus-2022", permanent: true },
     { source: "/blog/2", destination: "/blog/tourism-trade-investment-expo-2022", permanent: true },
@@ -42,8 +46,13 @@ const nextConfig: NextConfig = {
         destination: "https://batikorganikcorporate.id",
         permanent: true,
       },
-    ];
-  },
+] as const;
+
+const nextConfig: NextConfig = {
+  images: { unoptimized: true },
+  ...(isStaticExport
+    ? { output: "export" as const, trailingSlash: true }
+    : { redirects: async () => [...REDIRECTS] }),
 };
 
 export default nextConfig;

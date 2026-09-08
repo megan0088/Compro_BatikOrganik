@@ -14,8 +14,33 @@ npm run dev
 ```
 
 ```bash
-npm run build
+npm run build          # mode server (Vercel)
 ```
+
+```bash
+npm run build:static   # folder out/ untuk hosting statis (Hostinger)
+```
+
+## Dua target deploy
+
+| | Vercel | Hostinger (shared) |
+|---|---|---|
+| Perintah | `npm run build` | `npm run build:static` |
+| Hasil | mode server Next | folder `out/` HTML statis |
+| Redirect | `redirects()` di `next.config.ts` | `public/.htaccess` |
+| Gambar | WebP siap pakai | sama |
+
+Daftar redirect hidup di **satu tempat** — `REDIRECTS` di `next.config.ts`.
+`scripts/gen-htaccess.mjs` membacanya dan menulis `public/.htaccess`, jadi
+kedua target tidak bisa menyimpang diam-diam. Script itu dijalankan otomatis
+oleh `build:static`.
+
+### Naik ke Hostinger
+
+1. `npm run build:static`
+2. Unggah **isi** folder `out/` (bukan foldernya) ke `public_html/`
+3. Pastikan `.htaccess` ikut — File Manager Hostinger menyembunyikan berkas
+   berawalan titik; nyalakan "Show hidden files"
 
 ## Design token — arah “Soga”
 

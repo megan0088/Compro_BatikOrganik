@@ -3,6 +3,8 @@ import { categories } from "@/lib/content";
 import { ogImage, OG_CONTENT_TYPE, OG_SIZE } from "@/lib/og";
 
 export const alt = "Koleksi BatikOrganik";
+/* Wajib untuk `output: export` — kartu digambar saat build, bukan on-demand. */
+export const dynamic = "force-static";
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 

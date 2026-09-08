@@ -1,6 +1,8 @@
 import { ogImage, OG_CONTENT_TYPE, OG_SIZE } from "@/lib/og";
 
 export const alt = "BatikOrganik — batik pewarna alam, ditenun dari kisah Nusantara";
+/* Wajib untuk `output: export` — kartu digambar saat build, bukan on-demand. */
+export const dynamic = "force-static";
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 

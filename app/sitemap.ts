@@ -1,4 +1,7 @@
 import type { MetadataRoute } from "next";
+
+/* Wajib untuk `output: export` — tanpa ini Next menganggapnya rute dinamis. */
+export const dynamic = "force-static";
 import { SITE } from "@/lib/constants";
 import { blogPosts, campaigns, categories, slugify } from "@/lib/content";
 
