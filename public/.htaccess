@@ -39,6 +39,10 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # Serahkan sepenuhnya ke backend lama — jangan ada aturan di bawah
+  # yang menyentuhnya.
+  RewriteRule ^(admin|api)(/|$) - [L]
+
   RewriteRule ^blog/0/?$ /blog/9th-tpo-general-assembly-common-prosperity-in-tourism-through-open-partnership-2 [R=301,L]
   RewriteRule ^blog/1/?$ /blog/indonesia-city-expo-2022-padang-7-10-agustus-2022 [R=301,L]
   RewriteRule ^blog/2/?$ /blog/tourism-trade-investment-expo-2022 [R=301,L]

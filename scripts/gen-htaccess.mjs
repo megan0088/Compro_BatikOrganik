@@ -8,6 +8,20 @@
  */
 import { writeFile, readFile } from "node:fs/promises";
 
+/*
+ * Path yang TIDAK boleh disentuh aturan di bawah.
+ *
+ * Di Hostinger, backend Laravel lama masih tinggal di public_html yang sama
+ * dan melayani /admin serta /api lewat route virtual — bukan berkas nyata.
+ *
+ * Diuji dengan Apache: kalau backend punya .htaccess sendiri di subfoldernya,
+ * aturan mod_rewrite di subdirektori MENIMPA aturan induk (tidak digabung),
+ * jadi backend sebenarnya sudah aman tanpa baris ini. Aturan tetap ada
+ * sebagai penjaga eksplisit untuk kasus backend yang tidak punya .htaccess
+ * sendiri. Kosongkan array ini kalau backend lama sudah pensiun.
+ */
+const PASSTHROUGH = ["admin", "api"];
+
 const src = await readFile("next.config.ts", "utf8");
 const rules = [
   ...src.matchAll(/source:\s*"([^"]+)"[\s\S]*?destination:\s*"([^"]+)"/g),
@@ -58,6 +72,15 @@ const lines = [
   "  RewriteEngine On",
   "",
 ];
+
+if (PASSTHROUGH.length) {
+  lines.push(
+    "  # Serahkan sepenuhnya ke backend lama — jangan ada aturan di bawah",
+    "  # yang menyentuhnya.",
+    `  RewriteRule ^(${PASSTHROUGH.join("|")})(/|$) - [L]`,
+    "",
+  );
+}
 
 for (const { from, to } of rules) {
   const pattern = `^${from.replace(/^\//, "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}/?$`;
