@@ -29,7 +29,7 @@ export default function CollectionCard({
   return (
     <Link
       href={href}
-      className="group flex flex-col gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-soga"
+      className="group zoom-hover reveal flex flex-col gap-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-soga"
     >
       <div className="relative aspect-square w-full overflow-hidden bg-surface-deep">
         {image && (

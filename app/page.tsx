@@ -1,7 +1,7 @@
 import Image from "next/image";
 import CopyBlock, { Caption } from "@/components/sections/CopyBlock";
 import HeroImage from "@/components/sections/HeroImage";
-import VideoEmbed from "@/components/sections/VideoEmbed";
+import VideoFacade from "@/components/sections/VideoFacade";
 import ActionButton from "@/components/ui/ActionButton";
 import CollectionCard from "@/components/ui/CollectionCard";
 import Container from "@/components/ui/Container";
@@ -48,9 +48,9 @@ function PhotoGrid({
   if (shots.length === 0) return null;
 
   return (
-    <ul className={`grid grid-cols-2 gap-3 md:gap-4 ${columns}`}>
+    <ul className={`reveal grid grid-cols-2 gap-3 md:gap-4 ${columns}`}>
       {shots.map((s) => (
-        <li key={s.a.src} className="relative aspect-video overflow-hidden bg-surface-deep">
+        <li key={s.a.src} className="zoom-hover relative aspect-video overflow-hidden bg-surface-deep">
           <Image
             src={s.a.src}
             alt={s.alt}
@@ -64,8 +64,11 @@ function PhotoGrid({
   );
 }
 
-const videoOf = (part: number) =>
-  partRows(part).find((r) => r.with_video === 1)?.link ?? null;
+const videoOf = (part: number) => {
+  const link = partRows(part).find((r) => r.with_video === 1)?.link ?? null;
+  const id = link?.match(/embed\/([A-Za-z0-9_-]+)/)?.[1] ?? null;
+  return id ? { id, poster: asset(`/video-poster/${id}.webp`) } : null;
+};
 
 export default function Home() {
   const hero = asset(partRows(1)[0]?.image_url);
@@ -177,7 +180,7 @@ export default function Home() {
               <CopyBlock row={s2} className="md:w-1/2" />
               <div className="md:w-1/2">
                 <PhotoGrid
-                  rows={partSlides(2).slice(0, 4)}
+                  rows={partSlides(2)}
                   label="Koleksi BatikOrganik"
                   columns="md:grid-cols-2"
                 />
@@ -273,7 +276,7 @@ export default function Home() {
           .map((r) => ({ r, a: asset(r.image_url) }))
           .filter((x) => x.a !== null);
         const beside = bts[0];
-        const strip = bts.slice(1, 4);
+        const strip = bts.slice(1);
         return (
           <Section tone="flush">
             <div className="bg-indigo-deep py-[var(--space-default)] text-surface">
@@ -315,6 +318,16 @@ export default function Home() {
                 </div>
               </Container>
             </div>
+            {videoOf(5) && (
+              <Container>
+                <VideoFacade
+                  videoId={videoOf(5)!.id}
+                  poster={videoOf(5)!.poster}
+                  title="Dedikasi pengrajin BatikOrganik"
+                  className="mt-[var(--space-default)]"
+                />
+              </Container>
+            )}
             {strip.length > 0 && (
               <ul className="grid grid-cols-3">
                 {strip.map(({ r, a }, i) => (
@@ -361,6 +374,14 @@ export default function Home() {
                 )}
               </div>
             </div>
+            {videoOf(6) && (
+              <VideoFacade
+                videoId={videoOf(6)!.id}
+                poster={videoOf(6)!.poster}
+                title="Program penanaman pohon BatikOrganik"
+                className="mt-[var(--space-default)]"
+              />
+            )}
           </Container>
         </Section>
       )}
@@ -381,17 +402,24 @@ export default function Home() {
                   </ActionButton>
                 )}
               </div>
-              <PhotoGrid rows={partSlides(7).slice(0, 3)} label="Bingkisan batik" />
+              <PhotoGrid rows={partSlides(7)} label="Bingkisan batik" />
             </div>
           </Container>
         </Section>
       )}
 
-      {/* 9 — Video profil, satu saja. Situs lama menyematkan tiga iframe berat. */}
+      {/*
+        9 — Video profil. Ketiga video situs lama kini kembali: posternya
+        gambar lokal, iframe YouTube baru dimuat setelah diklik.
+      */}
       {videoOf(2) && (
         <Section tone="minor" className="bg-surface-warm">
           <Container>
-            <VideoEmbed src={videoOf(2)!} title="Profil BatikOrganik" />
+            <VideoFacade
+              videoId={videoOf(2)!.id}
+              poster={videoOf(2)!.poster}
+              title="Profil BatikOrganik"
+            />
           </Container>
         </Section>
       )}

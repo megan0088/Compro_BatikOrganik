@@ -61,7 +61,7 @@ export default function SplitRow({
 
   return (
     <div
-      className={`mx-auto flex w-full max-w-[1240px] flex-col gap-10 px-5 py-[var(--space-default)] md:flex-row md:items-center md:gap-16 md:px-10 ${
+      className={`reveal mx-auto flex w-full max-w-[1240px] flex-col gap-10 px-5 py-[var(--space-default)] md:flex-row md:items-center md:gap-16 md:px-10 ${
         flip ? "md:flex-row-reverse" : ""
       }`}
     >

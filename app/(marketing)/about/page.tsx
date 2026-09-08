@@ -1,7 +1,8 @@
 import PageHero from "@/components/sections/PageHero";
 import SplitRow from "@/components/sections/SplitRow";
-import VideoEmbed from "@/components/sections/VideoEmbed";
+import VideoFacade from "@/components/sections/VideoFacade";
 import Container from "@/components/ui/Container";
+import { asset } from "@/lib/assets";
 import RichText from "@/components/ui/RichText";
 import { SITE } from "@/lib/constants";
 import { journeyRows } from "@/lib/content";
@@ -37,8 +38,11 @@ export default function AboutPage() {
         if (row.with_video === 1 && row.link) {
           return (
             <Container key={row.id}>
-              <VideoEmbed
-                src={row.link}
+              <VideoFacade
+                videoId={row.link.match(/embed\/([A-Za-z0-9_-]+)/)?.[1] ?? ""}
+                poster={asset(
+                  `/video-poster/${row.link.match(/embed\/([A-Za-z0-9_-]+)/)?.[1]}.webp`,
+                )}
                 title={row.title ?? `Video ${row.name}`}
                 className="mb-20"
               />

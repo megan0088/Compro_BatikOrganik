@@ -37,7 +37,7 @@ export default function CopyBlock({
   className?: string;
 }) {
   return (
-    <div className={`flex flex-col items-start gap-5 ${className}`}>
+    <div className={`reveal flex flex-col items-start gap-5 ${className}`}>
       {row.subtitle && <Eyebrow>{row.subtitle}</Eyebrow>}
       {row.title && (
         <Heading as={as} level={level} className="max-w-[18ch]">

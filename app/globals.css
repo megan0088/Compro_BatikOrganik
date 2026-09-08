@@ -92,6 +92,43 @@ body {
 .rich-text-center p,
 .rich-text-center :is(ul, ol) { margin-inline: auto; }
 
+/*
+ * Animasi masuk — CSS murni, nol JavaScript.
+ *
+ * `animation-timeline: view()` membuat browser sendiri yang mengatur progres
+ * berdasarkan posisi elemen di viewport, jadi tidak perlu IntersectionObserver
+ * maupun pustaka animasi. Browser yang belum mendukungnya mengabaikan seluruh
+ * blok ini dan elemen tampil normal — bukan tersembunyi.
+ */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      animation: reveal-in linear both;
+      animation-timeline: view();
+      animation-range: entry 8% cover 26%;
+    }
+  }
+}
+
+@keyframes reveal-in {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Foto sedikit membesar saat kartu di-hover — halus, 400ms. */
+.zoom-hover img {
+  transition: transform 400ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.zoom-hover:hover img {
+  transform: scale(1.04);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -99,4 +136,6 @@ body {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+  .reveal { animation: none !important; opacity: 1 !important; transform: none !important; }
+  .zoom-hover:hover img { transform: none !important; }
 }
