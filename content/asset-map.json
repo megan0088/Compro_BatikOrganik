@@ -1172,5 +1172,25 @@
   "src": "/assets/static-media/taka-makassar.webp",
   "width": 848,
   "height": 1200
+ },
+ "/video-poster/-pZK72dd4tI.webp": {
+  "src": "/assets/video-poster/-pZK72dd4tI.webp",
+  "width": 960,
+  "height": 540
+ },
+ "/video-poster/5fF9jQXt_0M.webp": {
+  "src": "/assets/video-poster/5fF9jQXt_0M.webp",
+  "width": 960,
+  "height": 540
+ },
+ "/video-poster/Pi-xBmbZ6G4.webp": {
+  "src": "/assets/video-poster/Pi-xBmbZ6G4.webp",
+  "width": 960,
+  "height": 540
+ },
+ "/video-poster/RL0g9Cyromc.webp": {
+  "src": "/assets/video-poster/RL0g9Cyromc.webp",
+  "width": 960,
+  "height": 540
  }
 }
