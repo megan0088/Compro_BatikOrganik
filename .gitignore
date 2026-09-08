@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# aset LinkedIn dari pekerjaan lain, bukan bagian situs
+/batikorganik-linkedin-*.jpg
+/batikorganik-logo-linkedin-*.png
