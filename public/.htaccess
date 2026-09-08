@@ -39,6 +39,20 @@
   </FilesMatch>
 </IfModule>
 
+# ── Matikan eksekusi PHP ─────────────────────────────────
+# Situs ini 100% statis — tidak ada satu pun berkas PHP yang sah.
+# Pada Maret 2025 penyerang menaruh 200 index.php halaman judi di sini.
+# Dengan aturan ini, berkas serupa hanya akan terunduh sebagai teks,
+# tidak pernah dijalankan. Hapus blok ini kalau suatu saat menaruh PHP.
+<FilesMatch \.(php|php[0-9]|phtml|phar|pl|py|cgi|shtml)$>
+  Require all denied
+</FilesMatch>
+<IfModule mod_php.c>
+  php_flag engine off
+</IfModule>
+RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .php8
+RemoveType .php .phtml .php3 .php4 .php5 .php7 .php8
+
 # ── Redirect permanen dari URL situs lama ────────────────
 <IfModule mod_rewrite.c>
   RewriteEngine On

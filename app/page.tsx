@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CopyBlock, { Caption } from "@/components/sections/CopyBlock";
+import HeroImage from "@/components/sections/HeroImage";
 import VideoEmbed from "@/components/sections/VideoEmbed";
 import ActionButton from "@/components/ui/ActionButton";
 import CollectionCard from "@/components/ui/CollectionCard";
@@ -94,13 +95,9 @@ export default function Home() {
       */}
       <section className="relative h-[85svh] min-h-[560px] w-full overflow-hidden lg:h-screen">
         {hero && (
-          <Image
-            src={hero.src}
+          <HeroImage
+            image={hero}
             alt="Koleksi kain BatikOrganik ditata di ruang pamer"
-            fill
-            sizes="100vw"
-            priority
-            className="object-cover"
           />
         )}
         <div

@@ -14,14 +14,16 @@ import "./globals.css";
 const newsreader = Newsreader({
   variable: "--font-newsreader",
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  // Hanya 400 — judul tidak pernah memakai bobot lain.
+  weight: ["400"],
   display: "swap",
 });
 
 const karla = Karla({
   variable: "--font-karla",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  // 300 dibuang: tidak ada satu pun `font-light` di kode.
+  weight: ["400", "500", "600"],
   display: "swap",
 });
 
