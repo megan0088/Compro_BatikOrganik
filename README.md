@@ -35,6 +35,21 @@ Daftar redirect hidup di **satu tempat** — `REDIRECTS` di `next.config.ts`.
 kedua target tidak bisa menyimpang diam-diam. Script itu dijalankan otomatis
 oleh `build:static`.
 
+### Membangun untuk domain lain
+
+`SITE.url` menentukan canonical, `og:url`, sitemap, dan robots.txt sekaligus.
+Untuk domain uji coba, timpa keduanya — kalau tidak, salinan situs jadi
+konten duplikat yang canonical-nya menunjuk ke domain produksi.
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://batikorganik.id \
+NEXT_PUBLIC_NOINDEX=1 \
+npm run build:static
+```
+
+`NOINDEX=1` memasang `<meta name="robots" content="noindex, nofollow">` dan
+membuat robots.txt menutup seluruh situs.
+
 ### Naik ke Hostinger
 
 1. `npm run build:static`

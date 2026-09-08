@@ -3,7 +3,7 @@ import { Karla, Newsreader } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppFab from "@/components/layout/WhatsAppFab";
-import { SITE } from "@/lib/constants";
+import { NOINDEX, SITE } from "@/lib/constants";
 import "./globals.css";
 
 /*
@@ -40,6 +40,7 @@ export const metadata: Metadata = {
     description: SITE.description,
   },
   twitter: { card: "summary_large_image" },
+  ...(NOINDEX ? { robots: { index: false, follow: false } } : {}),
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

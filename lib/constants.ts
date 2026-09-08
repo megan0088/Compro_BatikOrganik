@@ -28,11 +28,23 @@ export const SHOP = {
 export const SITE = {
   name: "BatikOrganik",
   title: "Batik Organik",
-  url: "https://batikorganik.co.id",
+  /*
+   * Menentukan canonical, og:url, sitemap, dan robots.txt sekaligus.
+   * Timpa lewat NEXT_PUBLIC_SITE_URL saat membangun untuk domain lain
+   * (mis. staging di batikorganik.id) — kalau tidak, seluruh halaman
+   * mengaku alamat aslinya ada di .co.id dan Google mengabaikan yang baru.
+   */
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://batikorganik.co.id",
   tagline: "INDONESIA ARTSY BATIK",
   description:
     "BatikOrganik adalah brand batik artsy pertama yang mengangkat motif batik etnik inovatif, menampilkan keindahan tradisi, budaya, fauna dan flora endemik, serta keelokan panorama Indonesia.",
 } as const;
+
+/**
+ * Setel NEXT_PUBLIC_NOINDEX=1 saat membangun untuk domain uji coba.
+ * Tanpa ini, salinan situs di domain lain jadi konten duplikat.
+ */
+export const NOINDEX = process.env.NEXT_PUBLIC_NOINDEX === "1";
 
 export const waLink = (phone: string, text?: string) =>
   `https://api.whatsapp.com/send/?phone=${phone}${
